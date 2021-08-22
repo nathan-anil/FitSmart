@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/plan.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="logo">
+            <img src="logo.png" width="60px" height="50px">
+            <h1 style="color: black;">Smart Fit</h1>
+        </div>
+        <div class="links">
+            <a href="dash.html">Dashboard</a>
+            <a style="background-color: #E0C2FF;
+            color: white;" href="plan.html">Planner</a>
+            <a href="edit.html">Creater</a>
+        </div>
+        <div class="foot">
+            <p style="position: absolute; color: rgb(68, 68, 68); "><strong> More features with Premium</strong>
+            </p>
+            <a
+                style="cursor: pointer;position: absolute; bottom: 9%; background-color: pink; padding:10px; border-radius: 10px;">Upgrade</a>
+            <img style="border-radius: 20px;" width="250px" height="150px" src="premium.jpg" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="select-menu">
+            <div class="item-menu">
+                <p>Monday</p>
+            </div>
+            <div class="item-menu">
+                <p>Tuesday</p>
+            </div>
+            <div class="item-menu">
+                <p>Wednesday</p>
+            </div>
+            <div class="item-menu">
+                <p>Thuresday</p>
+            </div>
+            <div class="item-menu">
+                <p>Friday</p>
+            </div>
+            <div class="item-menu">
+                <p>Saturday</p>
+            </div>
+            <div class="item-menu">
+                <p>Sunday</p>
+            </div>
+        </div>
+        <div class="outfit-show">
+            <img id="img-output" src="">
+            <a id="select-btn" onclick="showMenu()">Choose</a>
+        </div>
+        <div class="select-button">
+
+        </div>
+    </div>
+    <div class="display-fits" style="display: none;">
+        <p style="margin: 10px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Click to select an Outfit</p>
+
+    </div>
+    <div id="overlay-back"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="../scripts/plan.js"></script>
+</body>
+
+</html>

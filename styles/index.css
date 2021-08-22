@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family:'Poppins';}
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.drag-div1 {
+    width: 260px;
+    height: 160px;
+    background-color: rgb(228, 228, 228);
+    margin-bottom: 50px;
+    border-radius:15px;
+}
+.drag-div2 {
+    width: 260px;
+    height: 160px;
+    background-color: rgb(228, 228, 228);
+    margin-bottom: 50px;
+    border-radius:15px;
+}
+.drag-div3 {
+    width: 260px;
+    height: 160px;
+    background-color: rgb(228, 228, 228);
+    margin-bottom: 50px;
+    border-radius:15px;
+}
+.images {
+    display: flex;
+    flex-direction: column;
+}
+.button-main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.images .images-container {
+    padding: 50px;
+}
+.labels {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    color: #E0C2FF;
+    font-size: 22px;
+}
+p {
+    margin-bottom: 120px;
+}
+.button-main #button {
+    border: none;
+    color: white;
+    border: 2px solid pink;
+    color: pink;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputfile + label {
+    font-size: 16px;
+    color: pink;
+    font-weight: 200;
+    background-color: white;
+    border: 2px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    transition-duration: 0.4s;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: pink;
+    color: white;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.inputfile + label * {
+	pointer-events: none;
+}
+.button-main #button:hover {
+    background-color: pink;
+    color: white;
+  }  
+
+  footer .footer-container {
+      display: flex;
+      margin: 20px;
+      overflow: scroll;
+  }
+  footer .footer-container > *{
+    height: 160px;
+    width: 260px;
+    border-radius:15px;
+    background-color: rgb(228, 228, 228);
+    margin: 20px;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  footer .footer-container::-webkit-scrollbar {
+    background-color:rgb(228, 228, 228);
+    border-radius: 10px;
+    }
+    footer .footer-container::-webkit-scrollbar-thumb {
+        background: linear-gradient(to right, pink, rgb(142, 136, 221));
+        border-radius: 10px;
+    }
+footer .footer-container::-webkit-scrollbar:vertical {
+    display: none;
+}

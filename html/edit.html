@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <title>FIT</title>
+</head>
+
+<body>
+    <a style="position: absolute;" href="dash.html"><img src="back.png" alt=""></a>
+    <canvas style="position: absolute; display: none;" id="output"> </canvas>
+    <div class="main-container">
+        <div class="labels">
+            <div class="text-container">
+                <p>Top</p>
+                <p>Bottom</p>
+                <p>Shoes</p>
+            </div>
+        </div>
+        <div class="images">
+            <div class="images-container">
+                <div class="drag-div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div class="drag-div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div class="drag-div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+            </div>
+        </div>
+        <div class="button-main">
+            <div>
+                <input type="file" name="file" id="file" class="inputfile" />
+                <label for="file">Upload</label>
+            </div>
+            <a onclick="createOutfit()" id="button">Create</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Content -->
+        </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="../scripts/index.js"></script>
+</body>
+
+</html>
