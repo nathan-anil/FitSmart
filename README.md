@@ -10,6 +10,6 @@ Became better at front-end and back-end development.
 I also learned a lot about DOM manipulation and deploying apps with firebase.
 
 **Images** <br />
-![original (2)](https://user-images.githubusercontent.com/86805031/185492285-68229bbf-1acf-4452-baef-ce43cf90e45a.png)
 ![original (1)](https://user-images.githubusercontent.com/86805031/185492357-6dd6a333-096b-493f-b137-b72358eddc21.png)
 ![original](https://user-images.githubusercontent.com/86805031/185492371-2e7db111-845e-4023-bdae-894ad794f832.png)
+![original (2)](https://user-images.githubusercontent.com/86805031/185492285-68229bbf-1acf-4452-baef-ce43cf90e45a.png)
